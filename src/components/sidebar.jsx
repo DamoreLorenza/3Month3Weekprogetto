@@ -18,9 +18,9 @@ const SideBar=()=>{
     <Col className='d-flex flex-column'>
     <img
               src="../assets/logo/logo.png"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
+              width="130"
+              height="50"
+              className="d-inline-block align-top mt-5 ms-3"
               alt="Spotify logo"
             />
             

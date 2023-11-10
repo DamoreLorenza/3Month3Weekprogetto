@@ -14,19 +14,19 @@ const riproduzione= useSelector((state)=> state.stock)
                 <div className="d-flex">
 
                   <span>
-                    <img src="../assets/playerbuttons/shuffle.png" alt="shuffle" />
+                    <img src="../assets/playerbuttons/shuffle.png" alt="shuffle" width={20}/>
                   </span>
                   <span>
-                    <img src="../assets/playerbuttons/prev.png" alt="prev" />
+                    <img src="../assets/playerbuttons/prev.png" alt="prev" width={20}/>
                   </span>
                   <span>
-                    <img src="../assets/playerbuttons/play.png" alt="play" />
+                    <img src="../assets/playerbuttons/play.png" alt="play" width={20}/>
                   </span>
                   <span>
-                    <img src="../assets/playerbuttons/next.png" alt="next" />
+                    <img src="../assets/playerbuttons/next.png" alt="next" width={20}/>
                   </span>
                   <span>
-                    <img src="../assets/playerbuttons/repeat.png" alt="repeat" />
+                    <img src="../assets/playerbuttons/repeat.png" alt="repeat" width={20}/>
                   </span>
                 </div>
                 <div className="progress mt-3">
