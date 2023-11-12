@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Music from "./music"
 
 const Main =()=>{
 return(
@@ -40,6 +41,7 @@ return(
         <div id="pop" className=" d-flex justify-content-start">
           {/* <Link to='/music'> */}
           <a className="text-white fs-2" href='/music' >Pop Culture</a>
+          <Music/>
           {/* </Link> */}
           <div
             className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3"
