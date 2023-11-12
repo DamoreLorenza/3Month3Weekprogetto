@@ -11,7 +11,7 @@ export const addToFavoriteAction=(album)=>{
  
 return{
     type: ADD_TO_FAVORITE,
-    payload: album.title
+    payload: album
 }
 }
 

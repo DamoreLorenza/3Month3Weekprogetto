@@ -16,11 +16,11 @@ const initialState = {
         
         return {
           ...state, 
-          favourites: {
+          favourites: [
             ...state.favourites, 
-            content: [...state.favourites.content, action.payload],
+            action.payload,
             
-          },
+          ],
         }
   
       // case 'REMOVE_FROM_FAVORITE':

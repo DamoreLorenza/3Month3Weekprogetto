@@ -49,31 +49,62 @@ const Music=()=>{
          
 
     }
-    return(
-        
-        <>
-        <Row>
-        {Array.isArray(queen) && queen.map((album) => (
-<Col>
-          <Card style={{ width: '18rem' }} key={album.id}>
-            <Card.Img variant="top" src={album.picture}/>
-            <Card.Body>
-              <Card.Title onClick={(e)=>{e.preventDefault(); dispatch(getPlayAction(album.title))}}>{album.title}</Card.Title>
-              <Card.Text>{album.artist.name}</Card.Text>
-             
-            </Card.Body>
-            <span className='btn' onClick={handleClick}>
-        {isAdded ? <i className="bi bi-heart-fill"></i> : <i className="bi bi-heart"></i>}
-      </span>
-          </Card>
-        
-</Col>
-        ))}
-        </Row>
-      </>
 
-    )
+    return (
+      <>
+        {Array.isArray(queen) && (
+          <Row>
+            {queen.map((album) => (
+              <Col key={album.id} xs={4}>
+                <Card>
+                  <Card.Img variant="top" src={album.cover_medium} />
+                  <Card.Body>
+                    <Card.Title>{album.title}</Card.Title>
+                    <Card.Text>{album.artist.name}</Card.Text>
+                    {isAdded ? (
+                      <Button variant="danger" onClick={handleClick}>
+                        Added
+                      </Button>
+                    ) : (
+                      <Button variant="primary" onClick={handleClick}>
+                        Add to Favorites
+                      </Button>
+                    )}
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        )}
+      </>
+    );
 
 }
 
 export default Music
+
+
+// return(
+        
+//   <>
+//   <Row>
+//   {Array.isArray(queen) && queen.map((album) => (
+// <Col>
+//     <Card style={{ width: '18rem' }} key={album.id}>
+//       <Card.Img variant="top" src={album.picture}/>
+//       <Card.Body>
+//         <Card.Title onClick={(e)=>{e.preventDefault(); dispatch(getPlayAction(album.title))}}>{album.title}</Card.Title>
+//         <Card.Text>{album.artist.name}</Card.Text>
+       
+//       </Card.Body>
+//       <span className='btn' onClick={handleClick}>
+//   {isAdded ? <i className="bi bi-heart-fill"></i> : <i className="bi bi-heart"></i>}
+// </span>
+//     </Card>
+  
+// </Col>
+//   ))}
+//   </Row>
+// </>
+
+// )
