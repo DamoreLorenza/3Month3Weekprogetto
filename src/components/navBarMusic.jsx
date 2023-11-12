@@ -14,22 +14,22 @@ const riproduzione= useSelector((state)=> state.stock)
                 <div className="d-flex">
 
                   <span>
-                    <img src="../assets/playerbuttons/shuffle.png" alt="shuffle" width={20}/>
+                    <img src="../assets/playerbuttons/shuffle.png" alt="shuffle" width={20} className="me-3 me-md-5 ms-md-3"/>
                   </span>
                   <span>
-                    <img src="../assets/playerbuttons/prev.png" alt="prev" width={20}/>
+                    <img src="../assets/playerbuttons/prev.png" alt="prev" width={20} className="me-3 me-md-5"/>
                   </span>
                   <span>
-                    <img src="../assets/playerbuttons/play.png" alt="play" width={20}/>
+                    <img src="../assets/playerbuttons/play.png" alt="play" width={20} className="me-3 me-md-5"/>
                   </span>
                   <span>
-                    <img src="../assets/playerbuttons/next.png" alt="next" width={20}/>
+                    <img src="../assets/playerbuttons/next.png" alt="next" width={20} className="me-3 me-md-5"/>
                   </span>
                   <span>
-                    <img src="../assets/playerbuttons/repeat.png" alt="repeat" width={20}/>
+                    <img src="../assets/playerbuttons/repeat.png" alt="repeat" width={20} className="me-3 me-md-5"/>
                   </span>
                 </div>
-                <div className="progress mt-3">
+                <div className="progress col-10 col-md-11 mt-3 mb-3" style={{height: 8}}>
                   <div role="progressbar"></div>
                 </div>
               </div>

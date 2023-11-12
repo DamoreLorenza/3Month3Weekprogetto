@@ -39,7 +39,7 @@ return(
       <div className="">
         <div id="pop" className=" d-flex justify-content-start">
           {/* <Link to='/music'> */}
-          <h2 className="text-white" >Pop Culture</h2>
+          <a className="text-white fs-2" href='/music' >Pop Culture</a>
           {/* </Link> */}
           <div
             className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3"

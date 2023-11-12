@@ -13,11 +13,11 @@ function App() {
   return (
     <div className="App">
 <Row className='div'>
-<Col sm={2}>
+<Col sm={6} md={2}>
   <SideBar/></Col>
     
 
-<Col sm={10}>
+<Col sm={6} md={10}>
   <Main/>
 </Col>   
 </Row> 
